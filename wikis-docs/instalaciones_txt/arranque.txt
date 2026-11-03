@@ -1,0 +1,10 @@
+npms installers
+    -D typescript tsx @types/node
+    express
+    -D @types/express
+    dotenv // .env
+    helmet // cabeceras http
+    -D tsx // herramt abrir typesc sin copilar
+npx tsc --init
+
+npx tsx watch src/index.ts
