@@ -5,6 +5,26 @@ npms installers
     dotenv // .env
     helmet // cabeceras http
     -D tsx // herramt abrir typesc sin copilar
+    pg
+    uuid
 npx tsc --init
 
 npx tsx watch src/index.ts
+
+
+C:\Users\ubtarex_dev_temporal\GitHub\sistema-guardias>pnpm add -D @types/pg
+✓ Lockfile passes supply-chain policies (verified 20m ago)
+Packages: +1
++
+Progress: resolved 1, reused 21, downloaded 0, added 1
+Error: ERR_PNPM_PACKAGE_MANAGER_SYMLINK_FAILED
+
+  x adding a new package
+  |-> Failed to symlink "zod" for importer ".": Failed to create symlink at "C:\\Users\\cc.\\Documents\\GitHub\
+  |   \sistema-guardias\\node_modules\\zod" to "C:\\Users\\cc.\\Documents\\GitHub\\sistema-guardias\\node_modules\
+  |   \.pnpm\\zod@4.6.7\\node_modules\\zod": Could not move "C:\Users\cc.\Documents\GitHub\sistema-
+  |   guardias\node_modules\zod" out of the way. A file in it is probably in use by another process, such as a dev
+  |   server or an editor. Stop that process and try again.
+  `-> Acceso denegado. (os error 5)
+
+se soluciona cerrando zed, instalando -D @types/pg,y abriendo zed de nuevo
